@@ -9,10 +9,8 @@ Official repositoy for Deep Active Lesion Segmentaion ( DALS ).
 # Paper
 
 [Deep Active Lesion Segmentaion](https://arxiv.org/pdf/1908.06933.pdf) <br/>
-[Ali Hatamizadeh](http://web.cs.ucla.edu/~ahatamiz/), Assaf Hoogi, Debleena Sengupta, Wuyue Lu, Brian Wilcox, [Daniel Rubin](https://profiles.stanford.edu/daniel-rubin/), and [Demetri Terzopoulos](http://web.cs.ucla.edu/~dt/) <br/>
 
-MICCAI Machine Learning in Medical Imaging ([MLMI](http://mlmi2019.web.unc.edu/)) 2019.
-
+If you use the DALS framewokr, its fast Tensorflow-based levelset active contours or its CNN backbone, please consider citing our paper:  
 
 ```
 @article{hatamizadeh2019deep,
