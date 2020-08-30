@@ -12,7 +12,7 @@ Official Paper: [Link](https://link.springer.com/chapter/10.1007/978-3-030-32692
 
 ArXiv Paper: [Link](https://arxiv.org/pdf/1908.06933.pdf) <br/>
 
-If you use the DALS framework, its fast Tensorflow-based levelset active contours or its CNN backbone, please cite our paper:  
+If you use the DALS framework, its fast Tensorflow-based levelset active contours or its CNN backbone ( Dilated Dense U-Net ), please cite our paper:  
 
 ```
 @inproceedings{hatamizadeh2019deep,
