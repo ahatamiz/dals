@@ -40,7 +40,6 @@ parser.add_argument('--gpu', default='0', type=str) # Index of gpu to be used fo
 
 For instance, if you wanted to train with a batchsize of 4 and input image size of 256, you need to run:
 
-Training options:
 ```
 python main.py --train_status=1 --img_resize=512 --batch_size=4 
 ```
