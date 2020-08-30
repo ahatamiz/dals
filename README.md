@@ -19,7 +19,7 @@ conda create --name tf_gpu tensorflow-gpu==1.15.0
 
 # Arguments 
 
-Training options:
+You can pass the following argument for training and inference:
 ```
 parser.add_argument('--logdir', default='network', type=str) # Directory to save the model
 parser.add_argument('--mu', default=0.2, type=float) # mu coefficient in levelset acm model 
@@ -43,6 +43,17 @@ For instance, if you wanted to train with a batchsize of 4 and input image size 
 ```
 python main.py --train_status=1 --img_resize=512 --batch_size=4 
 ```
+
+# Dataset Structure
+
+For training, the dataloader expects all the files to be numpy arrays (.npy). Images and labels need to be put in the same folder. For example, the training folder looks like this
+
+```
+train/
+    img1_input.npy
+    img1_label.npy 
+```
+
 
 # Paper
 
