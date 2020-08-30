@@ -3,8 +3,6 @@
 
 Official repositoy for Deep Active Lesion Segmentaion ( DALS ). 
 
-Code will be released soon...
-
 <img src="./Images/DALS_Framework.png" width="100%">
 
 
