@@ -8,9 +8,9 @@ Official repositoy for Deep Active Lesion Segmentaion ( DALS ).
 
 # Paper
 
-Official Paper: [Deep Active Lesion Segmentaion](https://link.springer.com/chapter/10.1007/978-3-030-32692-0_12) <br/>
+Official Paper: [Link](https://link.springer.com/chapter/10.1007/978-3-030-32692-0_12) <br/>
 
-ArXiv Paper: [Deep Active Lesion Segmentaion](https://arxiv.org/pdf/1908.06933.pdf) <br/>
+ArXiv Paper: [Link](https://arxiv.org/pdf/1908.06933.pdf) <br/>
 
 If you use the DALS framework, its fast Tensorflow-based levelset active contours or its CNN backbone, please consider citing our paper:  
 
