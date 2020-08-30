@@ -28,8 +28,9 @@ If you use the DALS framework, its fast Tensorflow-based levelset active contour
 # Environment Setup
 
 To install all the requirments for this project, simply run this: 
-
+```
 pip install -r requirments.txt 
+```
 
 Note that this work uses the last version of Tensorflow 1.x which is (1.15.0). Assuming that conda is installed in your system, and if you needed to install the cuda and cuDNN compatible verisons for Tensorflow, you can simply use:
 
