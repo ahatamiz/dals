@@ -3,7 +3,7 @@
 
 Official repositoy for Deep Active Lesion Segmentaion ( DALS ). 
 
-DALS offers a fast levelset active contour model, implemented entirely in Tensorflow, that can be paired with any CNN for image segmentation. 
+DALS offers a fast levelset active contour model, implemented entirely in Tensorflow, that can be paired with any CNN backbone for image segmentation. 
 
 <img src="./Images/DALS_Framework.png" width="100%">
 
