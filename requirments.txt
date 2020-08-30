@@ -1,0 +1,4 @@
+tensorflow-gpu==1.15.0
+opencv-python
+pillow
+sklearn
