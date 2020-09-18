@@ -10,6 +10,14 @@ DALS offers a fast levelset active contour model, implemented entirely in Tensor
 In this demo, the CNN output is not exact and entails artifacts outside the regions of interest (lesion). Given such a sub-optimal initial condition, our DALS framework still is capable of delineating the boundaries and significantly improving the results.
 <img src="./Images/brain1.png" width="100%">
 
+To run the demo, simply run the following command: 
+```
+python main_demo.py --img_resize=256 --acm_iter_limit=600 --batch_size=1 
+```
+This runs the levelset active contour model, as introduced in DALS, for 600 iterations for an image of size 256 by 256 with a batch size of 1. Running the levelset in higher number of batches is also possible. 
+
+Using a NVIDIA TitanXP GPU, the entire demo runs for approximately 3 seconds.  
+
 # Paper
 
 <img src="./Images/DALS_Framework.png" width="100%">
