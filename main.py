@@ -153,7 +153,7 @@ def active_contour_layer(elems):
             local_window_x_max = tf.minimum(tf.cast(input_image_size - 1, dtype="int32"), local_window_x_max)
             local_window_y_max = tf.minimum(tf.cast(input_image_size - 1, dtype="int32"), local_window_y_max)
             local_image = img[local_window_y_min: local_window_y_max + 1,local_window_x_min: local_window_x_max + 1]
-            local_phi = phi_prime[local_window_y_min: local_window_y_max + 1,local_window_x_min: local_window_x_max + 1]
+            local_phi = phi_level[local_window_y_min: local_window_y_max + 1,local_window_x_min: local_window_x_max + 1]
             inner = tf.where(local_phi <= 0)
             area_inner = tf.cast(tf.shape(inner)[0], dtype='float32')
             outer = tf.where(local_phi > 0)
@@ -198,8 +198,8 @@ def active_contour_layer(elems):
         dt = .45 / (tf.reduce_max(tf.abs(d_phi_dt)) + 2.220446049250313e-16)
         d_phi = dt * d_phi_dt
         update_narrow_band = d_phi
-        phi_prime = phi_level + tf.scatter_nd([band], tf.cast(update_narrow_band, dtype='float32'),shape=[input_image_size, input_image_size])
-        phi_prime = re_init_phi(phi_prime, 0.5)
+        phi_level = phi_level + tf.scatter_nd([band], tf.cast(update_narrow_band, dtype='float32'),shape=[input_image_size, input_image_size])
+        phi_level = re_init_phi(phi_prime, 0.5)
 
         return (i + 1, phi_prime)
 
