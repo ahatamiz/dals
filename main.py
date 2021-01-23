@@ -76,7 +76,6 @@ def re_init_phi(phi, dt):
 
     return phi
 
-
 def get_curvature(phi, x, y):
     phi_shape = tf.shape(phi)
     dim_y = phi_shape[0]
