@@ -198,9 +198,9 @@ def active_contour_layer(elems):
         d_phi = dt * d_phi_dt
         update_narrow_band = d_phi
         phi_level = phi_level + tf.scatter_nd([band], tf.cast(update_narrow_band, dtype='float32'),shape=[input_image_size, input_image_size])
-        phi_level = re_init_phi(phi_prime, 0.5)
+        phi_level = re_init_phi(phi_level, 0.5)
 
-        return (i + 1, phi_prime)
+        return (i + 1, phi_level)
 
     i = tf.constant(0, dtype=tf.int32)
     phi = init_phi
